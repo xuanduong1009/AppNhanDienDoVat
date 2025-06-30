@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <!-- Hình ảnh bác sĩ -->
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/pic_login"
+        android:scaleType="fitXY" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:layout_marginTop="-32dp" />
+
+
+    <!-- Form đăng nhập -->
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="-17dp" />
+
+    <!-- Nhập số điện thoại -->
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="8dp" />
+
+    <!-- Nhập mật khẩu -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="8dp" />
+
+    <!-- LinearLayout chứa Lưu mật khẩu và Quên mật khẩu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="37dp"
+        android:gravity="center_vertical">
+
+        <!-- CheckBox lưu mật khẩu -->
+        <CheckBox
+            android:id="@+id/save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lưu mật khẩu" />
+
+        <!-- Link quên mật khẩu -->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="Quên mật khẩu"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <!-- Nút xác nhận -->
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <!-- Đăng ký tài khoản -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản?"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Quay lại -->
+    <TextView
+        android:id="@+id/back_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại > >"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+</LinearLayout>

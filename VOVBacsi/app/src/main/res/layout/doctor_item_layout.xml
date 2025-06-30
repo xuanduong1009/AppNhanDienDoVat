@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Image View for Doctor's Photo -->
+    <ImageView
+        android:id="@+id/doctorImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_person_24" />
+
+    <!-- Doctor's Name -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Doctor's Specialization -->
+    <TextView
+        android:id="@+id/specializationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialization"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginTop="8dp" />
+
+    <!-- Doctor's Degree -->
+    <TextView
+        android:id="@+id/degreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Doctor's Birth Year -->
+    <TextView
+        android:id="@+id/birthYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Year"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Department -->
+    <TextView
+        android:id="@+id/departmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Specialty -->
+    <TextView
+        android:id="@+id/specialtyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialty"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Treatable Diseases -->
+    <TextView
+        android:id="@+id/treatableDiseasesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treatable Diseases"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+    <Button
+        android:id="@+id/bookAppointmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt lịch khám" />
+
+</LinearLayout>

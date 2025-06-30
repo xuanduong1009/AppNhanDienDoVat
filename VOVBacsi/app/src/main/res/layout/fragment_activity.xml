@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Biểu tượng thông báo thành công -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_token_24"
+        android:layout_marginBottom="16dp"
+         />
+
+    <!-- Tiêu đề thông báo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt lịch thành công!"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Mô tả chi tiết -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cảm ơn bạn đã đặt lịch. Chúng tôi sẽ liên hệ để xác nhận thông tin sớm nhất."
+        android:textSize="16sp"
+
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nút quay lại trang chính -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại trang chính"
+
+        android:textColor="@color/white"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
